@@ -14,6 +14,11 @@ def put_test(value):
 
 def abc():
     print("alo")
+    
+    
+    
+def thu_branch():
+    print("htu branch")
 
 
 # The view function above will return {"hello": "world"}
