@@ -6,6 +6,11 @@ app = Chalice(app_name='app_test_1')
 @app.route('/')
 def index():
     return {'hello': 'world'}
+@app.route('/put/{value}', methods = ['PUT'])
+def put_test(value):
+    return {
+        "value" : value
+    }
 
 
 # The view function above will return {"hello": "world"}
